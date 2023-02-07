@@ -1,0 +1,9 @@
+{
+  "name": "a",
+  "scripts": {
+    "build":"node build.js"
+  },
+  "dependencies": {
+    "b": "workspace: *"
+  }
+}
