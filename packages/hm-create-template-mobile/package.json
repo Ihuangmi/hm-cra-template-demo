@@ -1,5 +1,5 @@
 {
-  "name": "hm-creat-template-mobile",
+  "name": "hm-create-template-mobile",
   "version": "1.0.0",
   "keywords": [
     "react",
@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Ihuangmi/hm-cra-template-demo.git",
-    "directory": "packages/hm-creat-template-mobile"
+    "directory": "packages/hm-create-template-mobile"
   },
   "license": "MIT",
   "engines": {
