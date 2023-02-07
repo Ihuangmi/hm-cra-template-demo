@@ -52,7 +52,7 @@ function init() {
       console.log(`    A custom ${chalk.cyan("--template")} can be one of:`);
       console.log(
         `      - a custom template published on npm: ${chalk.green(
-          "cra-hm-template-demo-mobile"
+          "hm-create-template-mobile"
         )}`
       );
       console.log();
@@ -347,7 +347,7 @@ function downloadTemplate({ appPath, useYarn, appName, templateName }) {
 }
 
 function getTemplateInstallPackage(template, originalDirectory) {
-  let templateToInstall = "cra-hm-template-demo"; // 前缀
+  let templateToInstall = "hm-create-template"; // 前缀
   if (template) {
     if (template.match(/^file:/)) {
       templateToInstall = `file:${path.resolve(
@@ -361,7 +361,7 @@ function getTemplateInstallPackage(template, originalDirectory) {
       // for tar.gz or alternative paths
       templateToInstall = template;
     } else {
-      // Add prefix 'cra-hm-template-demo-' to non-prefixed templates, leaving any
+      // Add prefix 'hm-create-template-' to non-prefixed templates, leaving any
       // @scope/ and @version intact.
       const packageMatch = template.match(/^(@[^/]+\/)?([^@]+)?(@.+)?$/);
       const scope = packageMatch[1] || "";
@@ -373,16 +373,16 @@ function getTemplateInstallPackage(template, originalDirectory) {
         templateName.startsWith(`${templateToInstall}-`)
       ) {
         // Covers:
-        // - cra-hm-template-demo
-        // - @SCOPE/cra-hm-template-demo
-        // - cra-hm-template-demo-NAME
-        // - @SCOPE/cra-hm-template-demo-NAME
+        // - hm-create-template
+        // - @SCOPE/hm-create-template
+        // - hm-create-template-NAME
+        // - @SCOPE/hm-create-template-NAME
         templateToInstall = `${scope}${templateName}${version}`;
       } else if (version && !scope && !templateName) {
         // Covers using @SCOPE only
         templateToInstall = `${version}/${templateToInstall}`;
       } else {
-        // Covers templates without the `cra-hm-template-demo` prefix:
+        // Covers templates without the `hm-create-template` prefix:
         // - NAME
         // - @SCOPE/NAME
         templateToInstall = `${scope}${templateToInstall}-${templateName}${version}`;
