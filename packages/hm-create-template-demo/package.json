@@ -1,6 +1,6 @@
 {
   "name": "hm-create-template-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The base template for Create React App.",
   "main": "index.js",
   "scripts": {
