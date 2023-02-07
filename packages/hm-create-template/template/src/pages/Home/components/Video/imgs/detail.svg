@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .detail {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g transform="translate(-64 -64)">
+    <path class="detail"
+      d="M78.857,72A6.857,6.857,0,1,0,72,78.857,6.857,6.857,0,0,0,78.857,72ZM80,72a8,8,0,1,1-8-8A8,8,0,0,1,80,72Z"
+      transform="translate(0 0)" />
+    <path class="detail" d="M387.741,672a.534.534,0,0,1,0,1.069h-3.206a.534.534,0,1,1,0-1.069Z"
+      transform="translate(-314.137 -597.089)" />
+    <path class="detail"
+      d="M417.069,290.672h-.534a.534.534,0,0,1,0-1.069H417.6a.534.534,0,0,1,.534.534v4.275a.534.534,0,0,1-1.069,0Zm1.069-2.138A.534.534,0,1,1,417.6,288a.534.534,0,0,1,.534.534"
+      transform="translate(-345.646 -219.775)" />
+  </g>
+</svg>
